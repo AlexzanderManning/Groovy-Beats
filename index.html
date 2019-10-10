@@ -4,14 +4,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Groovy Beats</title>
-  <link rel="stylesheet" href="/assets/css/groovy_beats.css">
-  <link href="https://fonts.googleapis.com/css?family=Turret+Road&display=swap" rel="stylesheet">
+	<title>Groovy Beats</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+	<script>
+			WebFont.load({
+				google: {
+					families: ['Turret Road']
+				}
+			});
+		</script>
+	<link rel="stylesheet" href="/assets/css/groovy_beats.css">
   <script type="text/javascript" src="/assets/lib/paper-full.js"></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.1.2/howler.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.1.2/howler.js"></script>
   <!-- Define inlined PaperScript associate it with myCanvas -->
   <script type="text/paperscript" canvas="myCanvas">
-
 // Create a centered text item at the center of the view:
 
 
@@ -19,7 +25,7 @@ var text = new PointText({
 	point: view.center,
 	content: 'Press any key, A to Z, and turn up speakers. Drop your best beat.',
   justification: 'center',
-  fontFamily: 'Turret Road',
+	fontFamily: 'Turret Road',
   fontSize: 20,
   fillColor: 'white',
 });
